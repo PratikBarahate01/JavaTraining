@@ -1,0 +1,10 @@
+package mapVsflatmap;
+
+import java.util.Scanner;
+
+public class ValidatePAN {
+	public static void main(String[] args) {
+		
+		
+	}
+}

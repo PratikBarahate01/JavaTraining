@@ -1,0 +1,5 @@
+package com.ust.annotationConfiguration.springAnnotation.quoteService;
+
+public interface Teacher {
+	public String getDailyHomework();
+}

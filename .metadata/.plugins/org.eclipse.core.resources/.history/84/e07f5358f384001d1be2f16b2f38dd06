@@ -1,0 +1,18 @@
+package com.ust.annotationConfiguration.springAnnotations;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        public String getDailyHomework() {
+
+    	    return "Revise thermodyamics";
+
+    	  }
+    }
+}

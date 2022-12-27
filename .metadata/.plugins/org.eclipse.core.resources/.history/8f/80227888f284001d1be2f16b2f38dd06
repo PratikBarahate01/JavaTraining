@@ -1,0 +1,9 @@
+package com.ust.annotationConfiguration.springAnnotation.quoteService;
+
+public class MotivationalQuoteService implements QuoteService{
+	
+	  @Override
+	  public String getQuote() {
+	    return "Don't settle for average...";
+	  }
+}

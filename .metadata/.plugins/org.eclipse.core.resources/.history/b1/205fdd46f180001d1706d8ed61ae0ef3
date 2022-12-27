@@ -1,0 +1,30 @@
+package TicketingSystem;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class CalculateAmount {
+	
+	public static final double TICKET_PER_KILOMETRE_FARE = 5;
+	public static void main(String[] args) {
+		List<Passenger> allPassengers = PassengerDao.getAllPassengers();
+		
+		Map<Passenger,Double> result = new HashMap<>();
+		
+//		allPassengers.stream()
+//			.collect(Collectors.groupingBy());
+		
+		for (Passenger passenger : allPassengers) {
+			double kilometre = passenger.getKilometre();
+		
+			kilometre*d;
+			result.put(passenger, Double.parseDouble());
+		}
+		
+		
+		
+	}
+}

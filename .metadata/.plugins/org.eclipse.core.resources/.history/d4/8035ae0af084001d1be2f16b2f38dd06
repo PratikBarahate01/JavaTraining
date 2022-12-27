@@ -1,0 +1,5 @@
+package com.ust.annotationConfiguration.apringAnnotations;
+
+public class Configuration {
+
+}

@@ -1,0 +1,8 @@
+package srp;
+
+public class UstEmp {
+	
+	public long salary(long amount, String accNo) {
+		return 0;
+	}
+}

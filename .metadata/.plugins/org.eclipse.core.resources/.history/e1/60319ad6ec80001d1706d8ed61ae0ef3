@@ -1,0 +1,10 @@
+package TicketingSystem;
+
+public class Passenger {
+	private int ticket_id;
+	private String passenger_name;
+	private String source;
+	private String destination;
+	private int kilometre;
+	private double amount;
+}

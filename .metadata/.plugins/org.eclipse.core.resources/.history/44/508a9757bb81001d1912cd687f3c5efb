@@ -1,0 +1,27 @@
+package employeeSorting;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.TreeSet;
+
+public class EmployeeService {
+	public static void main(String[] args) {
+		List<Employee> employeeList = EmployeeDao.getAllEmployees();
+		System.out.println(employeeList);
+		
+		
+		List<Employee> sortedList = new ArrayList<>();
+		
+		for (int i = 0; i < employeeList.size(); i++) {
+			for (int j = i+1; j < employeeList.size(); j++) {
+				if(employeeList.get(i).getId()<employeeList.get(j).getId()) {
+					sortedList.add(employeeList.get(i));
+				}
+			}
+		}
+		
+		System.out.println(sortedList);
+		
+	}
+}

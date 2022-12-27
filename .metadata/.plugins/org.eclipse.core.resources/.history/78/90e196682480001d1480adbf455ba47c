@@ -1,0 +1,28 @@
+package Interfaces;
+
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class WordCount {
+	public static void main(String[] args) {
+		String str = "Hello, Welcome to java, and java welcome you";
+		
+		HashMap<String, Integer> map = new HashMap<>();
+		String[] strArray = str.split(" ");
+		for (String word : strArray) {
+			 if(map.containsKey(word)) {
+				 int count = map.get(word);
+				 count++;
+				 map.put(word, count);
+			 }
+			 else {
+				 map.put(word, 1);
+			 }
+		}
+		
+		map.forEach((key, value)->{
+			System.out.println(key+":"+value);
+		});
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;InheritanceApplication&apos; to &apos;CoreJavaTraining&apos;" description="Rename resource &apos;InheritanceApplication&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/InheritanceApplication" name="CoreJavaTraining" stamp="1671595081388" updateReferences="true"/>
+</session>

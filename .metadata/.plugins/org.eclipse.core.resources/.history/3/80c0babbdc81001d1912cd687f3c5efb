@@ -1,0 +1,22 @@
+package com.ust.springExamples;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ust.springExamples.sample.Airtel;
+import com.ust.springExamples.sample.Sim;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		Sim e = (Sim) context.getBean("airtel");
+		e.calling();
+		
+		Sim e2 = (Sim) context.getBean("jio");
+		e2.data();
+	}
+}

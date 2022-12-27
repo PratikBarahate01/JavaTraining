@@ -1,0 +1,15 @@
+package Employee;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmployeeDao {
+	
+	
+	public List<Model> getModelList(){
+		List<Model> empList = new ArrayList<>();
+		empList.add(new Model(1001, "Pratik", "Bangalore", 25560.90));
+		empList.add(new Model(1002, "Mayur", "Mumbai", 33000.00));
+		empList.add(new Model(1003, "Vrushabh", "Chennai", 55600.90));
+	}
+}

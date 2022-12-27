@@ -1,0 +1,8 @@
+package osp;
+
+public class Vehicle {
+	public double calculateValue() {
+		System.out.println("Vehicle impl..");
+		return 0;
+	}
+}

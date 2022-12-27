@@ -1,0 +1,23 @@
+package employeeSalaryCalculator;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class EmployeeService {
+	public static void main(String[] args) {
+		
+		List<Employee> employeeList = EmployeeDao.getAllEmployees();
+		
+		Map<Employee, Map<Double, Double>> salaryMap = new HashMap<>();
+		
+		Double pfDeduction;
+		Double netSalary;
+		for (Employee employee : employeeList) {
+			double salary = employee.getSalary();
+			if(salary >= 0 && salary <25000) {
+				pfDeduction = (salary * 5) / 100;
+			}
+		}
+	}
+}

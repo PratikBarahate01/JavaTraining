@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="airtel" class="com.ust.springExamples.sample.Airtel"></bean>
+    <bean id="jio" class="com.ust.springExamples.sample.Jio"></bean>
+    
+    <bean id="employee" class="com.ust.springExamples.sample.Employee">
+    	<!-- Setter Injection
+    	<property name="id" value="101"></property>
+    	<property name="name" value="Rakesh"></property>
+    	<property name="location" value="Bangalore"></property>
+    	-->
+    	
+    	<constructor-arg index="0" value="101"></constructor-arg>
+    	<constructor-arg index="1" value="Rakesh"></constructor-arg>
+    	<constructor-arg index="2" value="Bangalore"></constructor-arg>
+    </bean>
+    
+
+</beans>
