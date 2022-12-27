@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<center>
+	<div style="padding-top:50px;">
+		<h1>Serverless and Amazon Services</h1>
+		
+		<br/><br/>
+		<h2>Accounts API</h2>
+		<form action="http://localhost:8080/api/employee/register" method="POST">
+			<table>
+				<tr>
+					<td>Employee Name</td>
+					<td>Email</td>
+					<td>Domain</td>
+					<td>Experience</td>
+					<td>Location</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="empName"/></td>
+					<td><input type="text" name="emailId"/></td>
+					<td><input type="text" name="domain"/></td>
+					<td><input type="text" name="experience"/></td>
+					<td><input type="text" name="location"/></td>
+					<td><input type="submit" value="add"/></td>
+				</tr>
+			</table>
+		</form>
+		<br/>
+		<div id="result"></div>
+		<script>
+
+            $.ajax({
+                type: "GET",
+                url: 'https://YOUR-API-URL/prod/users',
+                data: '',
+                crossDomain: true,
+                contentType: 'application/json',
+                dataType: 'json',
+                success: function(response) {
+                    $('#result').html('Success : '+ JSON.stringify(response));
+                },
+                error: function(response) {
+                    $('#result').html('Failure');
+                },
+            });
+
+		</script>
+		<div>
+</center>
+</body>
+</html>
