@@ -1,0 +1,16 @@
+package SumOfTwo;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.BinaryOperator;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class Main {
+	public static void main(String[] args) {
+		List<Integer> list = Arrays.asList(8,7,2,5,3,1);		
+	}
+}
